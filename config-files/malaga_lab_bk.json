@@ -1,0 +1,157 @@
+{
+  "iota": {
+    "ultralight": {
+      "api_key": "knikzbnoyomtk1n5t12jzb0fj",
+      "http": {
+        "protocol": "http",
+        "host": "195.235.93.235",
+        "port": 8085
+      }
+    }
+  },
+  "devices": [
+    {
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "THR_A488",
+      "attributes": [{
+        "object_id": "t",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(8,10)],[16,random(20,24)],[21,random(16,18)],[24,random(8,10)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "hr",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(68,70)],[16,random(75,80)],[21,random(72,74)],[24,random(68,70)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "THR_A492",
+      "attributes": [{
+        "object_id": "t",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(8,10)],[16,random(20,24)],[21,random(16,18)],[24,random(8,10)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "hr",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(68,70)],[16,random(75,80)],[21,random(72,74)],[24,random(68,70)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "THR_A493",
+      "attributes": [{
+        "object_id": "t",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(8,10)],[16,random(20,24)],[21,random(16,18)],[24,random(8,10)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "hr",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(68,70)],[16,random(75,80)],[21,random(72,74)],[24,random(68,70)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "THR_A498",
+      "attributes": [{
+        "object_id": "t",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(8,10)],[16,random(20,24)],[21,random(16,18)],[24,random(8,10)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "hr",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(68,70)],[16,random(75,80)],[21,random(72,74)],[24,random(68,70)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "THR_A499",
+      "attributes": [{
+        "object_id": "t",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(8,10)],[16,random(20,24)],[21,random(16,18)],[24,random(8,10)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "hr",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(68,70)],[16,random(75,80)],[21,random(72,74)],[24,random(68,70)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "AIQ_A464",
+      "attributes": [{
+        "object_id": "co2",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(450,700)],[24,random(450,700)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "tvoc",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(125,175)],[24,random(125,175)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "AIQ_A484",
+      "attributes": [{
+        "object_id": "co2",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(450,700)],[24,random(450,700)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "tvoc",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(125,175)],[24,random(125,175)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "AIQ_A491",
+      "attributes": [{
+        "object_id": "co2",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(450,700)],[24,random(450,700)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "tvoc",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(125,175)],[24,random(125,175)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "AIQ_A494",
+      "attributes": [{
+        "object_id": "co2",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(450,700)],[24,random(450,700)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "tvoc",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(125,175)],[24,random(125,175)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "AIQ_A496",
+      "attributes": [{
+        "object_id": "co2",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(450,700)],[24,random(450,700)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "tvoc",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(125,175)],[24,random(125,175)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */4 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "URBIN_A091",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-step-after-interpolator([[0,0],[10,20],[12,30],[16,55],[19,70],[20,0],[24,0]])"
+      }]
+    },{
+      "schedule": "0 0 20 */1 * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "URBIN_A091",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,100)],[24,random(0,100)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */4 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "URBIN_A094",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,100)],[24,random(0,100)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 20 */1 * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "URBIN_A094",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,100)],[24,random(0,100)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    }
+  ]
+}

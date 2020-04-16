@@ -1,0 +1,59 @@
+{
+  "iota": {
+    "ultralight": {
+      "api_key": "7kcqyweyui6bfivgbj02jporw",
+      "http": {
+        "protocol": "http",
+        "host": "195.235.93.235",
+        "port": 8085
+      }
+    }
+  },
+  "devices": [
+    {
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "THR_A461",
+      "attributes": [{
+        "object_id": "t",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(8,10)],[16,random(20,24)],[21,random(16,18)],[24,random(8,10)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "hr",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(68,70)],[16,random(75,80)],[21,random(72,74)],[24,random(68,70)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "THR_A497",
+      "attributes": [{
+        "object_id": "t",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(8,10)],[16,random(20,24)],[21,random(16,18)],[24,random(8,10)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "hr",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(68,70)],[16,random(75,80)],[21,random(72,74)],[24,random(68,70)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "CO2_A487",
+      "attributes": [{
+        "object_id": "co2",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(450,460)],[24,random(450,460)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "tvoc",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(125,135)],[24,random(125,135)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    },{
+      "schedule": "0 0 */1 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "CO2_A495",
+      "attributes": [{
+        "object_id": "co2",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(450,460)],[24,random(450,460)]], \"return\": {\"type\": \"float\"}})"
+      },{
+        "object_id": "tvoc",
+        "value": "time-random-linear-interpolator({\"spec\": [[0,random(125,135)],[24,random(125,135)]], \"return\": {\"type\": \"float\"}})"
+      }]
+    }
+  ]
+}

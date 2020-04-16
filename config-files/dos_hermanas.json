@@ -1,0 +1,175 @@
+{
+  "iota": {
+    "ultralight": {
+      "api_key": "9mjvx1to7y1w9we5zfm9d58ul",
+      "http": {
+        "protocol": "http",
+        "host": "195.235.93.235",
+        "port": 8085
+      }
+    }
+  },
+  "devices": [
+    {
+      "schedule": "0 0 * * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_001",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-step-after-interpolator([[0,0],[10,20],[12,30],[16,55],[19,70],[20,0],[24,0]])"
+      }]
+    },{
+      "schedule": "0 05 19 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_001",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "attribute-function-interpolator(module.exports = new SimulationDate().toISOString())"
+      }]
+    },{
+      "schedule": "0 0 * * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_002",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-step-after-interpolator([[0,0],[10,20],[12,30],[16,55],[19,98],[20,0],[24,0]])"
+      }]
+    },{
+      "schedule": "0 10 19 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_002",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "attribute-function-interpolator(module.exports = new SimulationDate().toISOString())"
+      }]
+    },{
+      "schedule": "0 0 * * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_003",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-step-after-interpolator([[0,0],[10,20],[12,30],[16,55],[19,98],[20,0],[24,0]])"
+      }]
+    },{
+      "schedule": "0 20 19 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_003",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "attribute-function-interpolator(module.exports = new SimulationDate().toISOString())"
+      }]
+    },{
+      "schedule": "0 0 * * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_004",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-step-after-interpolator([[0,0],[10,20],[12,30],[16,55],[19,98],[20,0],[24,0]])"
+      }]
+    },{
+      "schedule": "0 25 19 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_004",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "attribute-function-interpolator(module.exports = new SimulationDate().toISOString())"
+      }]
+    },{
+      "schedule": "0 0 * * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_005",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-step-after-interpolator([[0,0],[10,20],[12,30],[16,55],[19,98],[20,0],[24,0]])"
+      }]
+    },{
+      "schedule": "0 30 19 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_005",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "attribute-function-interpolator(module.exports = new SimulationDate().toISOString())"
+      }]
+    },{
+      "schedule": "0 0 * * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_006",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-step-after-interpolator([[0,0],[10,20],[12,30],[16,55],[19,98],[20,0],[24,0]])"
+      }]
+    },{
+      "schedule": "0 35 19 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_006",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "attribute-function-interpolator(module.exports = new SimulationDate().toISOString())"
+      }]
+    },{
+      "schedule": "0 0 * * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_007",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-step-after-interpolator([[0,0],[10,20],[12,30],[16,55],[19,98],[20,0],[24,0]])"
+      }]
+    },{
+      "schedule": "0 40 19 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_007",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "attribute-function-interpolator(module.exports = new SimulationDate().toISOString())"
+      }]
+    },{
+      "schedule": "0 0 * * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_008",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-step-after-interpolator([[0,0],[10,20],[12,30],[16,55],[19,98],[20,0],[24,0]])"
+      }]
+    },{
+      "schedule": "0 45 19 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_008",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "attribute-function-interpolator(module.exports = new SimulationDate().toISOString())"
+      }]
+    },{
+      "schedule": "0 0 * * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_009",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-step-after-interpolator([[0,0],[10,20],[12,30],[16,55],[19,98],[20,0],[24,0]])"
+      }]
+    },{
+      "schedule": "0 50 19 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_009",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "attribute-function-interpolator(module.exports = new SimulationDate().toISOString())"
+      }]
+    },{
+      "schedule": "0 0 * * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_010",
+      "attributes": [{
+        "object_id": "lle",
+        "value": "time-step-after-interpolator([[0,0],[10,20],[12,30],[16,55],[19,98],[20,0],[24,0]])"
+      }]
+    },{
+      "schedule": "0 55 19 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "MT_CE_010",
+      "attributes": [{
+        "object_id": "vac",
+        "value": "attribute-function-interpolator(module.exports = new SimulationDate().toISOString())"
+      }]
+    }
+  ]
+}

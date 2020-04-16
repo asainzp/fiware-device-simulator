@@ -1,0 +1,52 @@
+{
+  "iota": {
+    "json": {
+      "api_key": "xmogzvl05cbe7iahmadetj6k5",
+      "http": {
+        "protocol": "http",
+        "host": "iota.iotplatform.telefonica.com",
+        "port": 8185
+      }
+    }
+  },
+  "devices": [
+    {
+      "schedule": "* */15 * * * *",
+      "protocol": "JSON::HTTP",
+      "device_id": "dev_air_pro_48381",
+      "attributes": [
+        {
+         "object_id": "t",
+         "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(24,26)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+         "object_id": "h",
+         "value": "time-random-linear-interpolator({\"spec\": [[0,random(70,75)],[16,random(75,85)],[21,random(70,80)],[24,random(70,75)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+         "object_id": "bat",
+         "value": "time-random-linear-interpolator({\"spec\": [[0,random(3000,3100)],[16,random(3100,3500)],[21,random(3400,3600)],[24,random(3000,3100)]], \"return\": {\"type\": \"float\"}})"
+        }
+      ]
+    },
+    {
+      "schedule": "* */15 * * * *",
+      "protocol": "JSON::HTTP",
+      "device_id": "dev_air_pro_52271",
+      "attributes": [
+        {
+         "object_id": "t",
+         "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(14,16)],[21,random(10,12)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+         "object_id": "h",
+         "value": "time-random-linear-interpolator({\"spec\": [[0,random(70,75)],[16,random(75,85)],[21,random(70,80)],[24,random(70,75)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+         "object_id": "bat",
+         "value": "time-random-linear-interpolator({\"spec\": [[0,random(3000,3100)],[16,random(3100,3500)],[21,random(3400,3600)],[24,random(3000,3100)]], \"return\": {\"type\": \"float\"}})"
+        }
+      ]
+    }
+  ]
+}

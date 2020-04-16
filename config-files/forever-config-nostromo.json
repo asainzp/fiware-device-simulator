@@ -1,0 +1,15 @@
+[
+  {
+    "append": true,
+    "watch": true,
+    "sourceDir": "/Users/asainz/projects/fiware/fiware-device-simulator/bin",
+    "script": "fiwareDeviceSimulatorCLI",
+    "args": ["-c", "./config-files/malaga_lab.json"]
+  },{
+    "append": true,
+    "watch": true,
+    "sourceDir": "/Users/asainz/projects/fiware/fiware-device-simulator/bin",
+    "script": "fiwareDeviceSimulatorCLI",
+    "args": ["-c", "./config-files/sevilla_lab.json"]
+  }
+]
