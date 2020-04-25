@@ -11,6 +11,16 @@
   },
   "devices": [
     {
+      "schedule": "0 0 7 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "REED_A463",
+      "attributes": [
+        {
+          "object_id": "m3",
+          "value": 33503.00
+        }
+      ]
+    },{
       "schedule": "0 0 * * * *",
       "protocol": "UltraLight::HTTP",
       "device_id": "THR_A488",
