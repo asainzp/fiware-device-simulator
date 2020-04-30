@@ -1,7 +1,7 @@
 {
   "iota": {
     "json": {
-      "api_key": "x9jp4q1jnqp0oiacxw8wc0yht",
+      "api_key": "x9jp4q1jnqp0oiacxw8wc0yhu",
       "mqtt": {
         "protocol": "mqtt",
         "host": "mqtt.iotplatform.telefonica.com",
@@ -13,7 +13,7 @@
   },
   "devices": [
     {
-      "schedule": "0 */15 * * * *",
+      "schedule": "0 3,18,33,48 * * * *",
       "protocol": "JSON::MQTT",
       "device_id": "AP_COR_IE_086",
       "attributes": [
@@ -51,7 +51,7 @@
         }
       ]
     },{
-      "schedule": "15 */15 * * * *",
+      "schedule": "15 3,18,33,48 * * * *",
       "protocol": "JSON::MQTT",
       "device_id": "AP_COR_IE_087",
       "attributes": [
@@ -89,7 +89,7 @@
         }
       ]
     },{
-      "schedule": "47 */15 * * * *",
+      "schedule": "47 3,18,33,48 * * * *",
       "protocol": "JSON::MQTT",
       "device_id": "AP_COR_IE_088",
       "attributes": [
