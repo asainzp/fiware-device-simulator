@@ -1,7 +1,7 @@
 {
   "iota": {
     "json": {
-      "api_key": "x9jp4q1jnqp0oiacxw8wc0yhu",
+      "api_key": "x9jp4q1jnqp0oiacxw8wc0yht",
       "mqtt": {
         "protocol": "mqtt",
         "host": "mqtt.iotplatform.telefonica.com",
