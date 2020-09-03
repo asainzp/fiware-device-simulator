@@ -1,0 +1,131 @@
+{
+  "iota": {
+    "json": {
+      "api_key": "x9jp4q1jnqp0oiacxw8wc0yht",
+      "mqtt": {
+        "protocol": "mqtt",
+        "host": "mqtt.iotplatform.telefonica.com",
+        "port": 11884,
+        "user": "cordoba_odins",
+        "password": "oU40YzsI352aF5e4"
+      }
+    }
+  },
+  "devices": [
+    {
+      "schedule": "0 3,18,33,48 * * * *",
+      "protocol": "JSON::MQTT",
+      "device_id": "AP_COR_IE_086",
+      "attributes": [
+        {
+          "object_id": "ir",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "bat",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(3.0,3.5)],[16,random(3.0,3.5)],[21,random(3.0,3.5)],[24,random(3.0,3.5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "rh",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(60,85)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "t",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "st",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "st2",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(10,12)],[16,random(30,40)],[21,random(10,20)],[24,random(10,12)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "sm",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(10,15)],[16,random(50,55)],[21,random(30,20)],[24,random(10,15)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "sm2",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        }
+      ]
+    },{
+      "schedule": "15 3,18,33,48 * * * *",
+      "protocol": "JSON::MQTT",
+      "device_id": "AP_COR_IE_087",
+      "attributes": [
+        {
+          "object_id": "ir",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "bat",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(3.0,3.5)],[16,random(3.0,3.5)],[21,random(3.0,3.5)],[24,random(3.0,3.5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "rh",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(60,85)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "t",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "st",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "st2",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(10,12)],[16,random(30,40)],[21,random(10,20)],[24,random(10,12)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "sm",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(10,15)],[16,random(50,55)],[21,random(30,20)],[24,random(10,15)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "sm2",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        }
+      ]
+    },{
+      "schedule": "47 3,18,33,48 * * * *",
+      "protocol": "JSON::MQTT",
+      "device_id": "AP_COR_IE_088",
+      "attributes": [
+        {
+          "object_id": "ir",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "bat",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(3.0,3.5)],[16,random(3.0,3.5)],[21,random(3.0,3.5)],[24,random(3.0,3.5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "rh",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(60,85)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "t",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "st",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "st2",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(10,12)],[16,random(30,40)],[21,random(10,20)],[24,random(10,12)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "sm",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(10,15)],[16,random(50,55)],[21,random(30,20)],[24,random(10,15)]], \"return\": {\"type\": \"float\"}})"
+        },
+        {
+          "object_id": "sm2",
+          "value": "time-random-linear-interpolator({\"spec\": [[0,random(0,5)],[16,random(20,35)],[21,random(10,20)],[24,random(0,5)]], \"return\": {\"type\": \"float\"}})"
+        }
+      ]
+    }
+  ]
+}
