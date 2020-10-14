@@ -1,0 +1,207 @@
+{
+    "domain": {
+        "service": "sc_smart_region_andalucia",
+        "subservice": "/pct_cartuja"
+    },
+    "contextBroker": {
+        "protocol": "https",
+        "host": "cb.iotplatform.telefonica.com",
+        "port": 10027,
+        "ngsiVersion": "2.0"
+    },
+    "authentication": {
+        "provider": "keystone",
+        "protocol": "https",
+        "host": "auth.iotplatform.telefonica.com",
+        "port": 15001,
+        "user": "admin_andalucia",
+        "password": "4dmin_andalucia"
+    },
+    "entities": [
+        {
+            "schedule": "10 */15 * * * *",
+            "entity_name": "OnStreetParking:OnZone02",
+            "entity_type": "OnStreetParking",
+            "active": [
+                {
+                    "name": "occupiedSpotNumber",
+                    "type": "Number",
+                    "value": "time-random-linear-interpolator({\"spec\": [[0,3],[8,random(45,65)],[12,random(75,90)],[18,random(35,45)],[22,random(5,15)],[24,3]], \"return\": {\"type\": \"integer\", \"rounding\": \"round\"}})"
+                },
+                {
+                    "name": "availableSpotNumber",
+                    "type": "Number",
+                    "value": "time-random-linear-interpolator({\"spec\": [[0,87],[8,random(25,45)],[12,random(0,15)],[18,random(45,55)],[22,random(75,85)],[24,87]], \"return\": {\"type\": \"integer\", \"rounding\": \"round\"}})"
+                },
+                {
+                    "name": "percentageOccupancy",
+                    "type": "Number",
+                    "value": "time-random-linear-interpolator({\"spec\": [[0,3.3],[8,random(45.0,55.0)],[12,random(90.0,100.0)],[18,random(40.0,50.0)],[22,random(5.0,10.0)],[24,3.3]], \"return\": {\"type\": \"float\"}})"
+                },
+                {
+                    "name": "TimeInstant",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                },
+                {
+                    "name": "occupancyModified",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                }
+            ]
+        },
+        {
+            "schedule": "25 */15 * * * *",
+            "entity_name": "OnStreetParking:OnZone03",
+            "entity_type": "OnStreetParking",
+            "active": [
+                {
+                    "name": "TimeInstant",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                },
+                {
+                    "name": "occupancyModified",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                }
+            ]
+        },
+        {
+            "schedule": "45 */15 * * * *",
+            "entity_name": "OnStreetParking:OnZone04",
+            "entity_type": "OnStreetParking",
+            "active": [
+                {
+                    "name": "TimeInstant",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                },
+                {
+                    "name": "occupancyModified",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                }
+            ]
+        },
+        {
+            "schedule": "0 */11 * * * *",
+            "entity_name": "ParkingSpot:PS01",
+            "entity_type": "ParkingSpot",
+            "active": [
+                {
+                    "name": "TimeInstant",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                },
+                {
+                    "name": "occupancyModified",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                }
+            ]
+        },
+        {
+            "schedule": "0 */12 * * * *",
+            "entity_name": "ParkingSpot:PS02",
+            "entity_type": "ParkingSpot",
+            "active": [
+                {
+                    "name": "TimeInstant",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                },
+                {
+                    "name": "occupancyModified",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                }
+            ]
+        },
+        {
+            "schedule": "0 */13 * * * *",
+            "entity_name": "ParkingSpot:PS03",
+            "entity_type": "ParkingSpot",
+            "active": [
+                {
+                    "name": "TimeInstant",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                },
+                {
+                    "name": "occupancyModified",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                }
+            ]
+        },
+        {
+            "schedule": "0 */14 * * * *",
+            "entity_name": "ParkingSpot:PS04",
+            "entity_type": "ParkingSpot",
+            "active": [
+                {
+                    "name": "TimeInstant",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                },
+                {
+                    "name": "occupancyModified",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                }
+            ]
+        },
+        {
+            "schedule": "0 */15 * * * *",
+            "entity_name": "ParkingSpot:PS05",
+            "entity_type": "ParkingSpot",
+            "active": [
+                {
+                    "name": "TimeInstant",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                },
+                {
+                    "name": "occupancyModified",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                }
+            ]
+        },
+        {
+            "schedule": "0 */16 * * * *",
+            "entity_name": "ParkingSpot:PS06",
+            "entity_type": "ParkingSpot",
+            "active": [
+                {
+                    "name": "TimeInstant",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                },
+                {
+                    "name": "occupancyModified",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                }
+            ]
+        },
+        {
+            "schedule": "0 */17 * * * *",
+            "entity_name": "ParkingSpot:PS07",
+            "entity_type": "ParkingSpot",
+            "active": [
+                {
+                    "name": "TimeInstant",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                },
+                {
+                    "name": "occupancyModified",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                }
+            ]
+        }
+    ]
+}
