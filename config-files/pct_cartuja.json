@@ -29,16 +29,6 @@
                     "value": "time-random-linear-interpolator({\"spec\": [[0,2],[7,random(5,10)],[9,random(70,75)],[12,random(75,90)],[16,random(40,45)],[21,random(15,20)],[22,random(5,10)],[24,2]], \"return\": {\"type\": \"integer\", \"rounding\": \"round\"}})"
                 },
                 {
-                    "name": "availableSpotNumber",
-                    "type": "Number",
-                    "value": "time-random-linear-interpolator({\"spec\": [[0,88],[7,random(85,90)],[9,random(15,20)],[12,random(0,15)],[16,random(45,50)],[21,random(70,75)],[22,random(80,85)],[24,88]], \"return\": {\"type\": \"integer\", \"rounding\": \"round\"}})"
-                },
-                {
-                    "name": "percentageOccupancy",
-                    "type": "Number",
-                    "value": "time-random-linear-interpolator({\"spec\": [[0,3.3],[8,random(45.0,55.0)],[12,random(90.0,100.0)],[18,random(40.0,50.0)],[22,random(5.0,10.0)],[24,3.3]], \"return\": {\"type\": \"float\"}})"
-                },
-                {
                     "name": "TimeInstant",
                     "type": "DateTime",
                     "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
@@ -55,6 +45,11 @@
             "entity_name": "OnStreetParking:OnZone03",
             "entity_type": "OnStreetParking",
             "active": [
+                {
+                    "name": "occupiedSpotNumber",
+                    "type": "Number",
+                    "value": "time-random-linear-interpolator({\"spec\": [[0,2],[7,random(5,10)],[9,random(70,75)],[12,random(75,90)],[16,random(40,45)],[21,random(15,20)],[22,random(5,10)],[24,2]], \"return\": {\"type\": \"integer\", \"rounding\": \"round\"}})"
+                },
                 {
                     "name": "TimeInstant",
                     "type": "DateTime",
@@ -73,6 +68,11 @@
             "entity_type": "OnStreetParking",
             "active": [
                 {
+                    "name": "occupiedSpotNumber",
+                    "type": "Number",
+                    "value": "time-random-linear-interpolator({\"spec\": [[0,2],[7,random(5,10)],[9,random(70,75)],[12,random(75,90)],[16,random(40,45)],[21,random(15,20)],[22,random(5,10)],[24,2]], \"return\": {\"type\": \"integer\", \"rounding\": \"round\"}})"
+                },
+                {
                     "name": "TimeInstant",
                     "type": "DateTime",
                     "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
@@ -89,6 +89,11 @@
             "entity_name": "ParkingSpot:PS01",
             "entity_type": "ParkingSpot",
             "active": [
+                {
+                    "name": "battery",
+                    "type": "Number",
+                    "value": "time-random-linear-interpolator({\"spec\": [[0,3.16],[6,random(3.14,3.18)],[12,random(3.14,3.18)],[18,random(3.14,3.18)],[24,3.16]], \"return\": {\"type\": \"float\"}})"
+                },
                 {
                     "name": "TimeInstant",
                     "type": "DateTime",
