@@ -26,12 +26,12 @@
                 {
                     "name": "occupiedSpotNumber",
                     "type": "Number",
-                    "value": "time-random-linear-interpolator({\"spec\": [[0,3],[8,random(45,65)],[12,random(75,90)],[18,random(35,45)],[22,random(5,15)],[24,3]], \"return\": {\"type\": \"integer\", \"rounding\": \"round\"}})"
+                    "value": "time-random-linear-interpolator({\"spec\": [[0,2],[7,random(5,10)],[9,random(70,75)],[12,random(75,90)],[16,random(40,45)],[21,random(15,20)],[22,random(5,10)],[24,2]], \"return\": {\"type\": \"integer\", \"rounding\": \"round\"}})"
                 },
                 {
                     "name": "availableSpotNumber",
                     "type": "Number",
-                    "value": "time-random-linear-interpolator({\"spec\": [[0,87],[8,random(25,45)],[12,random(0,15)],[18,random(45,55)],[22,random(75,85)],[24,87]], \"return\": {\"type\": \"integer\", \"rounding\": \"round\"}})"
+                    "value": "time-random-linear-interpolator({\"spec\": [[0,88],[7,random(85,90)],[9,random(15,20)],[12,random(0,15)],[16,random(45,50)],[21,random(70,75)],[22,random(80,85)],[24,88]], \"return\": {\"type\": \"integer\", \"rounding\": \"round\"}})"
                 },
                 {
                     "name": "percentageOccupancy",
