@@ -108,6 +108,11 @@
                     "value": "import(now)"
                 },
                 {
+                    "name": "status",
+                    "type": "Text",
+                    "value": "free"
+                },
+                {
                     "name": "occupied",
                     "type": "Number",
                     "value": 0
@@ -131,6 +136,11 @@
                     "name": "previousRotationEnd",
                     "type": "DateTime",
                     "value": "import(now)"
+                },
+                {
+                    "name": "previousRotationDuration",
+                    "type": "Number",
+                    "value": 0
                 }
             ]
         },
@@ -153,6 +163,11 @@
                     "name": "occupancyModified",
                     "type": "DateTime",
                     "value": "import(now)"
+                },
+                {
+                    "name": "status",
+                    "type": "Text",
+                    "value": "attribute-function-interpolator(${{ParkingSpot:PS01}{occupied}} ? \"free\" : \"occupied\")"
                 },
                 {
                     "name": "occupied",
@@ -178,6 +193,11 @@
                     "name": "previousRotationEnd",
                     "type": "DateTime",
                     "value": "import(now)"
+                },
+                {
+                    "name": "previousRotationDuration",
+                    "type": "Number",
+                    "value": 660
                 }
             ]
         },
