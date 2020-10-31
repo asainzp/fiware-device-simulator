@@ -17,6 +17,9 @@
         "user": "admin_andalucia",
         "password": "4dmin_andalucia"
     },
+    "exports": {
+        "now": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+    },
     "entities": [
         {
             "schedule": "10 */15 * * * *",
@@ -85,24 +88,96 @@
             ]
         },
         {
-            "schedule": "0 */11 * * * *",
+            "schedule": "once",
             "entity_name": "ParkingSpot:PS01",
             "entity_type": "ParkingSpot",
             "active": [
+                {
+                    "name": "TimeInstant",
+                    "type": "DateTime",
+                    "value": "import(now)"
+                },
                 {
                     "name": "battery",
                     "type": "Number",
                     "value": "time-random-linear-interpolator({\"spec\": [[0,3.16],[6,random(3.14,3.18)],[12,random(3.14,3.18)],[18,random(3.14,3.18)],[24,3.16]], \"return\": {\"type\": \"float\"}})"
                 },
                 {
+                    "name": "occupancyModified",
+                    "type": "DateTime",
+                    "value": "import(now)"
+                },
+                {
+                    "name": "occupied",
+                    "type": "Number",
+                    "value": 0
+                },
+                {
+                    "name": "rotationCounter",
+                    "type": "Number",
+                    "value": 0
+                },
+                {
+                    "name": "previousOccupiedRotation",
+                    "type": "Number",
+                    "value": -1
+                },
+                {
+                    "name": "previousRotationBegin",
+                    "type": "DateTime",
+                    "value": "1970-01-01T00:00:00+01"
+                },
+                {
+                    "name": "previousRotationEnd",
+                    "type": "DateTime",
+                    "value": "import(now)"
+                }
+            ]
+        },
+        {
+            "schedule": "0 */11 * * * *",
+            "entity_name": "ParkingSpot:PS01",
+            "entity_type": "ParkingSpot",
+            "active": [
+                {
                     "name": "TimeInstant",
                     "type": "DateTime",
-                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                    "value": "import(now)"
+                },
+                {
+                    "name": "battery",
+                    "type": "Number",
+                    "value": "time-random-linear-interpolator({\"spec\": [[0,3.16],[6,random(3.14,3.18)],[12,random(3.14,3.18)],[18,random(3.14,3.18)],[24,3.16]], \"return\": {\"type\": \"float\"}})"
                 },
                 {
                     "name": "occupancyModified",
                     "type": "DateTime",
-                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
+                    "value": "import(now)"
+                },
+                {
+                    "name": "occupied",
+                    "type": "Number",
+                    "value": "attribute-function-interpolator(${{ParkingSpot:PS01}{occupied}} ? 0 : 1)"
+                },
+                {
+                    "name": "rotationCounter",
+                    "type": "Number",
+                    "value": "attribute-function-interpolator(${{ParkingSpot:PS01}{rotationCounter}} + 1)"
+                },
+                {
+                    "name": "previousOccupiedRotation",
+                    "type": "Number",
+                    "value": "attribute-function-interpolator(${{ParkingSpot:PS01}{occupied}})"
+                },
+                {
+                    "name": "previousRotationBegin",
+                    "type": "DateTime",
+                    "value": "date-increment-interpolator({\"origin\": \"now\", \"increment\": -660})"
+                },
+                {
+                    "name": "previousRotationEnd",
+                    "type": "DateTime",
+                    "value": "import(now)"
                 }
             ]
         },
