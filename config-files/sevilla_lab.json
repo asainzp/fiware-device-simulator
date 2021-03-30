@@ -4,7 +4,7 @@
       "api_key": "7kcqyweyui6bfivgbj02jporw",
       "http": {
         "protocol": "http",
-        "host": "195.235.93.235",
+        "host": "iota.iotplatform.telefonica.com",
         "port": 8085
       }
     }

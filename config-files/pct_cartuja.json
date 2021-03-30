@@ -15,7 +15,7 @@
         "host": "auth.iotplatform.telefonica.com",
         "port": 15001,
         "user": "admin_andalucia",
-        "password": "4dmin_andalucia"
+        "password": "4dmin_4nd4luci4"
     },
     "exports": {
         "now": "date-increment-interpolator({\"origin\": \"now\", \"increment\": 0})"
