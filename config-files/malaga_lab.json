@@ -1,4 +1,22 @@
 {
+  "domain": {
+      "service": "sc_smart_region_andalucia",
+      "subservice": "/malagalab"
+  },
+  "contextBroker": {
+      "protocol": "https",
+      "host": "cb.iotplatform.telefonica.com",
+      "port": 10027,
+      "ngsiVersion": "2.0"
+  },
+  "authentication": {
+      "provider": "keystone",
+      "protocol": "https",
+      "host": "auth.iotplatform.telefonica.com",
+      "port": 15001,
+      "user": "admin_andalucia",
+      "password": "4dmin_4nd4luci4"
+  },
   "iota": {
     "ultralight": {
       "api_key": "knikzbnoyomtk1n5t12jzb0fj",
@@ -11,13 +29,53 @@
   },
   "devices": [
     {
-      "schedule": "0 0 7 * * *",
+      "schedule": "0 0 */6 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "REED_A459",
+      "attributes": [
+        {
+          "object_id": "m3",
+          "value": "attribute-function-interpolator(${{device:REED_A459}{vol}} + Math.random()/10)"
+        }
+      ]
+    },{
+      "schedule": "0 0 */6 * * *",
       "protocol": "UltraLight::HTTP",
       "device_id": "REED_A463",
       "attributes": [
         {
           "object_id": "m3",
-          "value": 33503.00
+          "value": "attribute-function-interpolator(${{device:REED_A463}{vol}} + Math.random()/10)"
+        }
+      ]
+    },{
+      "schedule": "0 0 */6 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "REED_A465",
+      "attributes": [
+        {
+          "object_id": "m3",
+          "value": "attribute-function-interpolator(${{device:REED_A465}{vol}} + Math.random()/10)"
+        }
+      ]
+    },{
+      "schedule": "0 0 */6 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "REED_A468",
+      "attributes": [
+        {
+          "object_id": "m3",
+          "value": "attribute-function-interpolator(${{device:REED_A468}{vol}} + Math.random()/10)"
+        }
+      ]
+    },{
+      "schedule": "0 0 */6 * * *",
+      "protocol": "UltraLight::HTTP",
+      "device_id": "REED_A489",
+      "attributes": [
+        {
+          "object_id": "m3",
+          "value": "attribute-function-interpolator(${{device:REED_A489}{vol}} + Math.random()/10)"
         }
       ]
     },{
